@@ -1,7 +1,6 @@
 import java.util.Random;
 import java.util.Scanner;
 
-
 public class TicTacToe {
     //Global Board setup
     private static final int ROW = 3;
@@ -92,8 +91,7 @@ public class TicTacToe {
         }
         return false;
     }
-
-
+    
     //Method for checking for col win for specified player
     private static boolean isColWin(String player){
         for (int i = 0; i < COL; i++){
