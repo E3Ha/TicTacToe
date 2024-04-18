@@ -111,17 +111,8 @@ public class TicTacToe {
         return false;
     }
 
-    //Method for Ties - checks for a tie condition
+    //Method for Ties - checks for a tie condition based on how many moves have been made and if someone has won
     private static boolean isTie(int moves, boolean win){
-        /*
-        for (int i = 0; i < ROW; i++){
-            //if all spaces are filled = tie
-            if ((board[i][0] != "-" && board[i][1] != "-" && board[i][2] != "-") && (board[0][i] != "-" && board[1][i] != "-" && board[2][i] != "-")){
-                return true;
-            }
-        }
-        return false;
-         */
         if (moves == 8 && !win){
             return true;
         }
