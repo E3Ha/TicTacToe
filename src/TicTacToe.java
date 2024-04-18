@@ -17,10 +17,10 @@ public class TicTacToe {
         boolean tie = false;
         String player;
         int moves = 0;
-
-        //Clear the board
-        clearBoard();
+        
         do {
+            //Clear the board
+            clearBoard();
             //Display the Board
             display();
             moves = 0;
@@ -52,10 +52,6 @@ public class TicTacToe {
             }
             //Ask player if they want to play again
             playAgain = SafeInput.getYNConfirm(scan, "Play Again?");
-            //If user wants to play again, clear board
-            if (playAgain) {
-                clearBoard();
-            }
         }
         while (playAgain);
 
